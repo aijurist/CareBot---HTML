@@ -5,63 +5,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- 
-    - primary meta tags
-  -->
-  <title>Doclab - home</title>
-  <meta name="title" content="Doclab - home">
+  <title>Carebot - Home</title>
+  <meta name="title" content="Carebot - Demo">
   <meta name="description" content="This is a madical html template made by codewithsadee">
-
-  <!-- 
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-
-  <!-- 
-    - google font link
-  -->
+  <link rel="shortcut icon" href="assets/images/Carebot_transparent_logo.png" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik:wght@400;500;700&display=swap"
-    rel="stylesheet">
-
-  <!-- 
-    - custom css link
-  -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!-- 
-    - preload images
-  -->
   <link rel="preload" as="image" href="./assets/images/hero-banner.png">
   <link rel="preload" as="image" href="./assets/images/hero-bg.png">
-
 </head>
 
 <body id="top">
-
-  <!-- 
-    - #PRELOADER
-  -->
 
   <div class="preloader" data-preloader>
     <div class="circle"></div>
   </div>
 
-
-
-
-
-  <!-- 
-    - #HEADER
-  -->
-
+  <!--- #HEADER --->
   <header class="header" data-header>
     <div class="container">
 
       <a href="#" class="logo">
-        <img src="./assets/images/logo.svg" width="136" height="46" alt="Doclab home">
+        <img src="assets/images/Carebot_transparent.png" width="136" height="50px" alt="Carebot home">
       </a>
 
       <nav class="navbar" data-navbar>
@@ -69,7 +36,7 @@
         <div class="navbar-top">
 
           <a href="#" class="logo">
-            <img src="./assets/images/logo.svg" width="136" height="46" alt="Doclab home">
+            <img src="assets/images/Carebot_transparent.png" width="136" height="46" alt="Carebot home">
           </a>
 
           <button class="nav-close-btn" aria-label="clsoe menu" data-nav-toggler>
@@ -148,48 +115,40 @@
 
     </div>
   </header>
-
-
-
-
-
   <main>
     <article>
 
-      <!-- 
-        - #HERO
-      -->
-
+      <!--- #HERO --->
       <section class="section hero" style="background-image: url('./assets/images/hero-bg.png')" aria-label="home">
         <div class="container">
 
           <div class="hero-content">
 
-            <p class="hero-subtitle has-before" data-reveal="left">Welcome To Doclab</p>
+            <p class="hero-subtitle has-before" data-reveal="left">AI-powered Chatbot</p>
 
             <h1 class="headline-lg hero-title" data-reveal="left">
-              Find Nearest <br>
-              Doctor.
+              Empathetic AI <br>
+              Companion.
             </h1>
 
             <div class="hero-card" data-reveal="left">
 
               <p class="title-lg card-text">
-                Search doctors. clinics. hospitals. etc.
+                Chat with our AI - Powered Chatbot
               </p>
 
               <div class="wrapper">
 
                 <div class="input-wrapper title-lg">
-                  <input type="text" name="location" placeholder="Locations" class="input-field">
+                  <input type="text" name="location" placeholder="Chat with bot" class="input-field" autocomplete="off">
 
-                  <ion-icon name="location"></ion-icon>
+                  <ion-icon name="time-outline"></ion-icon>
                 </div>
 
                 <button class="btn has-before">
-                  <ion-icon name="search"></ion-icon>
+                  <ion-icon name="send-outline"></ion-icon>
 
-                  <span class="span title-md">Find Now</span>
+                  <span class="span title-md">Send</span>
                 </button>
 
               </div>
@@ -206,14 +165,7 @@
         </div>
       </section>
 
-
-
-
-
-      <!-- 
-        - #SERVICE
-      -->
-
+      <!--- #SERVICE --->
       <section class="service" aria-label="service">
         <div class="container">
 
@@ -223,15 +175,15 @@
               <div class="service-card" data-reveal="bottom">
 
                 <div class="card-icon">
-                  <img src="./assets/images/icon-1.png" width="71" height="71" loading="lazy" alt="icon">
+                  <img src="./assets/images/syringe (1).png" width="71" height="71" loading="lazy" alt="icon">
                 </div>
 
                 <h3 class="headline-sm card-title">
-                  <a href="#">Psychiatry</a>
+                  <a href="#">Medication</a>
                 </h3>
 
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing
+                  Our chatbot suggests medication based on your health records and previous medications
                 </p>
 
                 <button class="btn-circle" aria-label="read more about psychiatry">
@@ -249,11 +201,11 @@
                 </div>
 
                 <h3 class="headline-sm card-title">
-                  <a href="#">Gynecology</a>
+                  <a href="#">Consultation</a>
                 </h3>
 
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing
+                  Our chatbot acts as an AI powered doctor identifying your disease with ease
                 </p>
 
                 <button class="btn-circle" aria-label="read more about Gynecology">
@@ -271,11 +223,11 @@
                 </div>
 
                 <h3 class="headline-sm card-title">
-                  <a href="#">Pulmonology</a>
+                  <a href="#">Find Hospitals</a>
                 </h3>
 
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing
+                  Find hospitals near you wherever you want along with their location and distance
                 </p>
 
                 <button class="btn-circle" aria-label="read more about Pulmonology">
@@ -293,11 +245,11 @@
                 </div>
 
                 <h3 class="headline-sm card-title">
-                  <a href="#">Orthopedics</a>
+                  <a href="#">Personalized treatment</a>
                 </h3>
 
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing
+                  Get suggestions to improve health based on your health records and other factors
                 </p>
 
                 <button class="btn-circle" aria-label="read more about Orthopedics">
@@ -312,14 +264,7 @@
         </div>
       </section>
 
-
-
-
-
-      <!-- 
-        - #ABOUT
-      -->
-
+      <!--- #ABOUT --->
       <section class="section about" aria-labelledby="about-label">
         <div class="container">
 
@@ -327,11 +272,10 @@
 
             <p class="section-subtitle title-lg has-after" id="about-label" data-reveal="left">About Us</p>
 
-            <h2 class="headline-md" data-reveal="left">Experienced Workers</h2>
+            <h2 class="headline-md" data-reveal="left">Experienced Developers</h2>
 
             <p class="section-text" data-reveal="left">
-              Aliquam faucibus, odio nec commodo aliquam, neque felis placerat dui, a porta ante lectus dapibus est.
-              Aliquam
+              Creators of Carebot, an AI powered personal assistant which can help doctors and patients alike
             </p>
 
             <ul class="tab-list" data-reveal="left">
@@ -389,31 +333,24 @@
 
           </div>
 
-          <figure class="about-banner" data-reveal="right">
-            <img src="./assets/images/about-banner.png" width="554" height="678" loading="lazy" alt="about banner"
+          <figure class="about-banner" data-reveal="right" style="max-height: 500px; overflow: hidden">
+            <img src="./assets/images/pexels-djordje-petrovic-2102415.jpg" width="554" max-height="678" loading="lazy" alt="about banner"
               class="w-100">
           </figure>
 
         </div>
       </section>
 
-
-
-
-
-      <!-- 
-        - #LISTING
-      -->
-
+      <!--- #LISTING --->
       <section class="section listing" aria-labelledby="listing-label">
         <div class="container">
 
           <ul class="grid-list">
 
             <li>
-              <p class="section-subtitle title-lg" id="listing-label" data-reveal="left">Doctors Listig</p>
+              <p class="section-subtitle title-lg" id="listing-label" data-reveal="left">Chatbot Features</p>
 
-              <h2 class="headline-md" data-reveal="left">Browse by specialist</h2>
+              <h2 class="headline-md" data-reveal="left">Find unique features</h2>
             </li>
 
             <li>
@@ -424,73 +361,7 @@
                 </div>
 
                 <div>
-                  <h3 class="headline-sm card-title">Psychiatry</h3>
-
-                  <p class="card-text">Porta velit</p>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="listing-card" data-reveal="bottom">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-2.png" width="71" height="71" loading="lazy" alt="icon">
-                </div>
-
-                <div>
-                  <h3 class="headline-sm card-title">Gynecology</h3>
-
-                  <p class="card-text">Mattis augue</p>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="listing-card" data-reveal="bottom">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-4.png" width="71" height="71" loading="lazy" alt="icon">
-                </div>
-
-                <div>
-                  <h3 class="headline-sm card-title">Pulmonology</h3>
-
-                  <p class="card-text">Mauris laoreet</p>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="listing-card" data-reveal="bottom">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-5.png" width="71" height="71" loading="lazy" alt="icon">
-                </div>
-
-                <div>
-                  <h3 class="headline-sm card-title">Orthopedics</h3>
-
-                  <p class="card-text">Convallis vulputate</p>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="listing-card" data-reveal="bottom">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-6.png" width="71" height="71" loading="lazy" alt="icon">
-                </div>
-
-                <div>
-                  <h3 class="headline-sm card-title">Pediatrics</h3>
-
-                  <p class="card-text">Posuere maecenas</p>
+                  <h3 class="headline-sm card-title">Medication Suggestor</h3>
                 </div>
 
               </div>
@@ -504,9 +375,63 @@
                 </div>
 
                 <div>
-                  <h3 class="headline-sm card-title">Osteology</h3>
+                  <h3 class="headline-sm card-title">Secured Patient records</h3>
+                </div>
 
-                  <p class="card-text">Nisi nullam</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="listing-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-4.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <div>
+                  <h3 class="headline-sm card-title">Personalized Treatments</h3>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="listing-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-3.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <div>
+                  <h3 class="headline-sm card-title">Hospital and Doctor Locator</h3>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="listing-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-2.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <div>
+                  <h3 class="headline-sm card-title">Personalized Consultation</h3>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="listing-card" data-reveal="bottom">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-5.png" width="71" height="71" loading="lazy" alt="icon">
+                </div>
+
+                <div>
+                  <h3 class="headline-sm card-title">Book appointments</h3>
                 </div>
 
               </div>
@@ -517,14 +442,43 @@
         </div>
       </section>
 
-
-
-
-
-      <!-- 
-        - #BLOG
-      -->
-
+      <!--- Chatbot --->
+      <div style="font-size: 56px; text-align: center;">Demo of Carebot</div>
+      <div style="position: relative; height: 600px; right: 0; bottom: 0; left: 0; display: flex; justify-content: center; align-items: center; padding: 20px">
+        <div style="position: relative; overflow: hidden; border-radius: 0.375rem; border: 1px solid #e2e8f0; background-color: #ffffff; padding: 0.5rem; width: 100%; height: 100%">
+          <iframe
+            style="border: none; width: 100%; height: 100%;"
+            srcdoc="<body><script src='https://cdn.botpress.cloud/webchat/v0/inject.js'></script>
+            <script>
+              window.botpressWebChat.init({
+                  'composerPlaceholder': 'Chat with Carebot',
+                  'botConversationDescription': 'A personalized healthcare assistant',
+                  'botName': 'Carebot',
+                  'botId': '862a6892-ed7a-4de2-b295-f110ea98ff61',
+                  'hostUrl': 'https://cdn.botpress.cloud/webchat/v0',
+                  'messagingUrl': 'https://messaging.botpress.cloud',
+                  'clientId': '862a6892-ed7a-4de2-b295-f110ea98ff61',
+                  'enableConversationDeletion': true,
+                  'showPoweredBy': false,
+                  'className': 'webchatIframe',
+                  'containerWidth': '100%25',
+                  'layoutWidth': '100%25',
+                  'hideWidget': true,
+                  'showCloseButton': false,
+                  'disableAnimations': true,
+                  'closeOnEscape': false,
+                  'showConversationsButton': false,
+                  'enableTranscriptDownload': false,
+                  'stylesheet':'https://webchat-styler-css.botpress.app/prod/code/24a52de7-0ae8-4103-b67c-3090aedfc7ea/v6840/style.css'
+                  
+              });
+            window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
+            </script></body>"
+          ></iframe>
+        </div>
+      </div>
+      
+      <!--- #BLOG --->
       <section class="section blog" aria-labelledby="blog-label">
         <div class="container">
 
@@ -643,14 +597,7 @@
     </article>
   </main>
 
-
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
-
+  <!--- #FOOTER --->
   <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
     <div class="container">
 
@@ -659,7 +606,7 @@
         <div class="footer-brand" data-reveal="bottom">
 
           <a href="#" class="logo">
-            <img src="./assets/images/logo.svg" width="136" height="46" loading="lazy" alt="Doclab home">
+            <img src="./assets/images/Carebot_transparent.png" width="136" height="46" loading="lazy" alt="Doclab home">
           </a>
 
           <ul class="contact-list has-after">
@@ -672,29 +619,11 @@
 
               <div>
                 <p>
-                  Main Email : <a href="mailto:contact@website.com" class="contact-link">contact@&shy;website.com</a>
+                  Main Email : <a href="mailto:contact@website.com" class="contact-link">sunilkumarsk2423@gmail.com</a>
                 </p>
 
                 <p>
-                  Inquiries : <a href="mailto:Info@mail.com" class="contact-link">Info@mail.com</a>
-                </p>
-              </div>
-
-            </li>
-
-            <li class="contact-item">
-
-              <div class="item-icon">
-                <ion-icon name="call-outline"></ion-icon>
-              </div>
-
-              <div>
-                <p>
-                  Office Telephone : <a href="tel:0029129102320" class="contact-link">0029129102320</a>
-                </p>
-
-                <p>
-                  Mobile : <a href="tel:000232439493" class="contact-link">000 2324 39493</a>
+                  Inquiries : <a href="mailto:Info@mail.com" class="contact-link">sunilkumarsk2423@gmail.com</a>
                 </p>
               </div>
 
@@ -709,15 +638,15 @@
           <p class="headline-sm footer-list-title">About Us</p>
 
           <p class="text">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+            Developers of Carebot - A personalized healthcare assistant
           </p>
 
           <address class="address">
             <ion-icon name="map-outline"></ion-icon>
 
             <span class="text">
-              2416 Mapleview Drive <br>
-              Tampa, FL 33634
+              24/16 2nd Avenue<br>
+              Anna nagar
             </span>
           </address>
 
@@ -808,7 +737,7 @@
       <div class="footer-bottom">
 
         <p class="text copyright">
-          &copy; Doclab 2022 | All Rights Reserved by codewithsadee
+          &copy; Carebot 2023 | All Rights Reserved by Sunil Kumar 
         </p>
 
         <ul class="social-list">
@@ -850,30 +779,13 @@
     </div>
   </footer>
 
-
-
-
-
-  <!-- 
-    - #BACK TO TOP
-  -->
-
+  <!--- #BACK TO TOP --->
   <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
     <ion-icon name="chevron-up"></ion-icon>
   </a>
-
-
-
-
-
-  <!-- 
-    - custom js link
-  -->
+  <!-- - custom js link --->
   <script src="./assets/js/script.js"></script>
-
-  <!-- 
-    - ionicon link
-  -->
+  <!--- ionicon link --->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
