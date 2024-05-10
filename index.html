@@ -442,6 +442,12 @@
         </div>
       </section>
 
+      <!-- Calendly badge widget begin -->
+      <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+      <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+      <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/sunilkumarsk2423?hide_gdpr_banner=1', text: 'Schedule time with me', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
+      <!-- Calendly badge widget end -->
+
       <!--- Chatbot --->
       <div style="font-size: 56px; text-align: center;">Demo of Carebot</div>
       <div style="position: relative; height: 600px; right: 0; bottom: 0; left: 0; display: flex; justify-content: center; align-items: center; padding: 20px">
@@ -454,10 +460,10 @@
                   'composerPlaceholder': 'Chat with Carebot',
                   'botConversationDescription': 'A personalized healthcare assistant',
                   'botName': 'Carebot',
-                  'botId': '862a6892-ed7a-4de2-b295-f110ea98ff61',
+                  'botId': '1a1db4d0-72fb-46c9-ab90-e5632c070151',
                   'hostUrl': 'https://cdn.botpress.cloud/webchat/v0',
                   'messagingUrl': 'https://messaging.botpress.cloud',
-                  'clientId': '862a6892-ed7a-4de2-b295-f110ea98ff61',
+                  'clientId': '1a1db4d0-72fb-46c9-ab90-e5632c070151',
                   'enableConversationDeletion': true,
                   'showPoweredBy': false,
                   'className': 'webchatIframe',
@@ -789,6 +795,16 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+  <script>
+    window.botpressWebChat.onEvent(
+  function (event) {
+    if (event.type === 'TRIGGER') {
+      Calendly.showPopupWidget('https://calendly.com/sunilkumarsk2423');
+    }
+  },
+  ['TRIGGER']
+);
+  </script>
 </body>
 
 </html>
